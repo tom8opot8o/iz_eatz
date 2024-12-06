@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Ensures cropping, not squeezing */
+    border-radius: 50%; /* Circular mask */
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+}
+
+.account-name h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.posts-container {
+    display: flex; /* Make all posts in one row */
+    justify-content: center;
+    gap: 1px; /* Space between images */
+    overflow-x: auto; /* Scrollable row for smaller screens */
+    padding: 10px;
+}
+
+.posts-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for a cleaner look */
+}
+
+.post img {
+    width: 170px;
+    height: 300px;
+    object-fit: cover; /* Ensures images are cropped, not squeezed */
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    transition: transform 0.0s;
+}
+
+.post img:hover {
+    transform: scale(1.00); /* Zoom effect on hover */
+}
+
+.post a {
+    text-decoration: none;
+    color: inherit;
+}
